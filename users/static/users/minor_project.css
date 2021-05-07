@@ -1,0 +1,291 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* defining fonts */
+.font-xs{font-size: 1rem !important;}
+.font-x1{font-size: 1.5rem !important;}
+.font-x2{font-size: 2.5rem !important;}
+.font-x3{font-size: 5rem !important;}
+.heading{
+    font-family: Poppins,sans-serif;
+    margin: 0;
+    line-height: normal;
+}
+/*no margin no padding */
+.nospace{margin: 0!important;padding: 0 !important;list-style: none;}
+/* defining margins */
+.m-1{margin: 1rem;}
+.m-2{margin: 2rem;} 
+
+.my-1{margin-top: 1rem;margin-bottom: 1rem;}
+.my-2{margin-top: 2rem;margin-bottom: 2rem;}
+.my-3{margin-top: 3rem;margin-bottom: 3rem;}
+.my-4{margin-top: 4rem;margin-bottom: 4rem;}
+
+.mx-1{margin-left: 1rem;margin-right: 1rem;}
+.mx-2{margin-left: 2rem;margin-right: 2rem;}
+.mx-3{margin-left: 3rem;margin-right: 3rem;}
+.mx-4{margin-left: 4rem;margin-right: 4rem;}
+
+.p-1{padding: 1rem;}
+.p-2{padding: 2rem;}
+
+article,figure,section{ display: block;margin: 0;padding: 0;}
+img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html{overflow-x: hidden; overflow-y: scroll;}
+
+html,body{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6rem;
+    font-family: 'Merriweather Sans',sans-serif;
+}
+
+h1{letter-spacing: 5px;}
+/* for space out the heading defined with h1 tag */
+
+*,*::before,*::after{box-sizing: border-box;}
+
+/* for transition effects on photos */
+
+*,*::before,*::after,*:hover{transition: all 0.3s ease-in-out;}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+}
+
+a:hover{font-weight: bold;}
+
+/*flex properties */
+.d-flex-c{
+    display: flex!important;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.d-flex-r{
+    display: flex!important;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ 
+}
+.justify-content-space-between{
+    justify-content: center;
+
+}
+.wrapper{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    word-wrap: break-word;
+}
+.container{padding: 6rem;}
+
+/*backgroung color */
+.bg-grey{background-color: #EEE;}
+.bg-green{background-color: #2E8B57;}
+
+.btn{
+    display: inline-block;
+    padding: 8px 18px;
+    text-transform: uppercase;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.btn, .btn.inverse:hover{
+    color: #ffffff;
+    background-color: #2E8B57;
+    border-color: #2E8B57;
+}
+.btn:hover,.btn.inverse{
+    color:inherit;
+    background-color: transparent;
+    border-color: inherit;
+}
+
+.clear{display: block;}
+.clear::before,.clear::after{display:table ;content: "";}
+
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+.text-uppercase{text-transform: uppercase;}
+.text-bold{font-weight: 600;}
+.text-justify{text-align: justify;}
+.text-white{color:#FFF!important}
+.text-dark{color:#333 !important}
+
+.f1_left{float: left;}
+.f1_right{float: right;}
+
+/* for parallax effect */
+#parallax-1{
+    background: url(places-to-visit-in-India-in-february.jpg) fixed no-repeat;
+    min-height: 720px;
+    background-position: center;
+}
+#parallax .overlay{min-height: 720px;}
+.overlay{
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.2) !important;
+}
+#logo img{height: 30px;}
+nav ul, nav ol{margin: 0; padding: 0;list-style: none;}
+#main_navbar{line-height: normal;}
+#main_navbar li{
+    display: inline-block;
+    position: relative;
+    margin:0 15px 0 0;
+    padding: 0;
+}
+#main_navbar li:last-child{margin-right: 0;}    
+#main_navbar li a{display: block;padding: 25px 0;color: inherit;}
+#main_navbar li li{width: 100%;margin: 0;}
+#main_navbar li li:hover>a{color: #FFF;background-color: #57ADC4;}
+#main_navbar .drop{padding-left: 15px;}
+#main_navbar ul ul{
+    z-index: 9999;
+    position: absolute;
+    width: 180px;
+    text-transform: none;
+    visibility: hidden;
+    opacity: 0;
+}
+#main_navbar li li a, #main_navbar li li .drop{
+    display: block;
+    margin:0;
+    padding: 10px 15px;
+}
+#main_navbar ul li:hover>ul{
+    visibility: visible;
+    opacity: 1;
+}
+#main_navbar li li .drop::after{top: 15px;left:5px}
+#main_navbar .drop::after, #main_navbar li li .drop::after{
+    content:"\f0d7";
+    position: absolute;
+    font-family: "FontAwesome";
+    font-size: 10px;
+    line-height: 10px;
+}
+#main_navbar .active a, #main_navbar a:hover, #main_navbar li:hover> a{
+    color:#FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: inherit;
+}
+#main_navbar .drop::after{
+    top:30px;
+    left: 5px;
+}
+#main_navbar ul ul ul{
+    left:180px;
+    top:0;
+}
+#banner-text{
+    position: relative;
+    top:150px;
+    margin-left:100px;
+    border-left:3px solid white;
+    padding-left:50px; 
+}
+.one_half{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    width: 48%;
+}
+#extra-text{
+    margin-left: 10px; 
+}
+/* parallax-2 */
+#parallax-2{background:url(manali2.jpg) fixed no-repeat ;}
+
+
+#destinations ul li{
+    max-width: 300px;
+
+}
+.hover1{
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+.hover .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.4s cubic-bezier(0.88,-0.99,0,1.81);
+}
+.hover1 img{
+    display: block;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.88,-0.99,0,1.81);
+}
+.hover1 h2{
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background: rgba(0,0,0,0.6);
+    transform: translateY(-100px);
+    transition:all 0.4s cubic-bezier(0.88,-0.99,0,1.81) ;
+    padding: 10px;
+
+}
+.hover1 a.info{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    opacity: 0;
+    transition: all 0.4s ease;
+    margin:50px 0 0;
+    padding: 7px 14px;
+}
+.hover1 a.info:hover{
+     box-shadow:0 0 5px #FFF ;
+}
+.hover1:hover img{
+    transform: scale(1.2);
+}
+.hover:hover .overlay{
+    opacity:1;
+
+}
+.hover1:hover h2, .hover1:hover a.info{
+    opacity:1;
+    transform:translateY(0);
+}
+.hover1:hover a.info{transition-delay: 0.2s;
+}

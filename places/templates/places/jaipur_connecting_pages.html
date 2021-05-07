@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CONNECTING PAGES
+        </title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'places/jaipur_style1.css' %}">
+        </head>
+        <body>
+            <div class="container">
+                <div class="circle"></div>
+                <h1>
+                    JAIPUR
+                </h1>
+                <p>Jaipur is the capital and the largest city of the Indian state of Rajasthan. As of 2011, the city had a population of 3.1 million, making it the tenth most populous city in the country. Jaipur is also known as the Pink City, due to the dominant color scheme of its buildings. It is located 268 km (167 miles) from the national capital New Delhi.
+
+                    Jaipur was founded in 1727 by the Rajput ruler Jai Singh II,the ruler of Amer, after whom the city is named. It was one of the earliest planned cities of modern India, designed by Vidyadhar Bhattacharya.During the British Colonial period, the city served as the capital of Jaipur State. After independence in 1947, Jaipur was made the capital of the newly formed state of Rajasthan.</p>   
+            </div>
+            <div class="container1">
+            <a class="button" href="{% url 'hotels_jaipur' %}" >HOTELS</a>
+            </div>
+        </body> 

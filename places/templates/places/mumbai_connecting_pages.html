@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CONNECTING PAGES
+        </title>
+        {% load static %}
+
+        <link rel="stylesheet" type="text/css" href="{% static 'places/style1.css' %}">
+        </head>
+        <body>
+            <div class="container">
+                <div class="circle"></div>
+                <h1>
+                    MUMBAI
+                </h1>
+                <p>Mumbai (English: /mʊmˈbaɪ/, Marathi: [ˈmumbəi]; formerly known as Bombay /bɒmˈbeɪ/, the official name until 1995) is the capital city of the Indian state of Maharashtra. According to the United Nations, as of 2018, Mumbai is the second-most populous city in the country after Delhi and the seventh-most populous city in the world with a population of roughly 20 million.</p>   
+            </div>
+            <div class="container1">
+            <a class="button" href="{% url 'hotels_mumbai' %}" >HOTELS</a>
+            </div>
+        </body>

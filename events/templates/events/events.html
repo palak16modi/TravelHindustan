@@ -1,0 +1,96 @@
+{% load static %}
+
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sale Invoice</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="{% static 'news/stylesheet.css' %}">
+
+
+    <style>
+    h1{
+        margin-bottom : 40px;
+        text-align : center;
+        background-color: #339966;
+        color: #ffffff;
+        padding:20px;
+    }
+
+    body{
+      background-color: #ffffff;
+    }
+
+      tr{
+        background-color: #9999ff
+      }
+
+
+
+    tr:hover{
+        opacity: 0.9;
+    }
+
+    td{
+      background-color: #c4edd8;
+      border: 2px solid #ffffff;
+      margin: 50px;
+      padding: 8px 10px 8px 10px;
+    }
+
+    th{
+      height: 40px;
+      width: 200px;
+      background-color: #339966;
+      color: #ffffff;
+      border-bottom-width: 4px;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border: 2px solid #ffffff;
+      margin: 20px;
+      padding: 8px 10px 8px 10px;
+    }
+
+    tbody>tr>:nth-child(1){
+      padding-right: 70px;
+      text-align: left;
+    }
+    .center {
+    margin-left: auto;
+    margin-right: auto;
+    }
+    </style>
+
+</head>
+
+<body>
+  <header>
+  <h1>UPCOMING EVENTS AND FESTIVALS</h1>
+
+</header>
+  <table class="center">
+    <tr><th>name</th>
+    <th>place</th>
+    <th>month</th>
+    <th>details</th>
+  	<th>for more info</th></tr>
+      {% for e in event_fes %}
+      <tr>
+          <td>{{ e.name }}</td>
+          <td>{{ e.place}} </td>
+          <td>{{e.month}}</td>
+          <td>{{ e.details}} </td>
+          <td><a href="{{n.url}}">here</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+</div>
+
+</body>
+</html>

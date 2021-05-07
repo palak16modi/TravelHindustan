@@ -1,0 +1,49 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Delhi Hotels</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'places/delhi_card.css' %}"> 
+    <style>
+        address{
+            display: block;
+        }
+        h3#bill_id{
+            margin-left:100%;
+        }
+    </style>
+</head>
+
+<body style="background-color:#932432;"></body>
+
+    {% for hotel in hotels %}
+    <div class="main">
+    <div class="cards">
+        <div class="image">
+            <img src="/static/places/{{hotel.image}}">
+        </div>
+    
+    <div class="title">
+        <h1><td>{{ hotel.name }}<br></td></h1>
+    </div>
+    <div class="des">
+        <p>  <td><br><h5>CITY</h5><br>{{ hotel.locality }}</td>
+            <td><br><br><h5>VIEWS</h5>{{ hotel.views }}</td>
+            <td><br>{{ hotel.price_per_night }}<br></td>
+            <td><br><h5>BOOKING PROVIDER</h5><br>{{ hotel.booking_provider }}<br></td>
+            <td><br><h5>DEALS</h5><br>{{ hotel.no_of_deals }}<br></td>
+            <td><br><h5>FEATURES</h5><br>{{ hotel.features }}<br><br></td>
+            <br></p>
+        <button><a href="{{ hotel.url }}">Book now..</a></button>
+    </div>
+    </div>
+    </div>   
+    {% endfor %}
+<!------ Include the above in your HEAD tag ---------->
+
+
+</div>
+</body>
+</html>

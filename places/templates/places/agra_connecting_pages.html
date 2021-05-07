@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CONNECTING PAGES
+        </title>
+        <!-- static -->
+        {% load static %}
+
+        <link rel="stylesheet" type="text/css" href="{% static 'places/agra_style1.css' %}">
+        </head>
+        <body>
+            <div class="container">
+                <div class="circle"></div>
+                <h1>
+                    AGRA
+                </h1>
+                <p>Agra is a city on the banks of the Yamuna river in the Agra district of the Indian state of Uttar Pradesh.It is 206 kilometres (128 mi) south of the national capital New Delhi. Agra is the fourth-most populous city in Uttar Pradesh and 24th in India.
+
+                    Sikandar Lodi was the first ruler of the Delhi Sultanate to move his capital from Delhi to Agra in 1504, and so he is regarded as being the founder of Agra. Sikandar Lodi's son, Ibrahim Lodi, was defeated at the Battle of Panipat in 1526 by Babur, which marked the beginning of Mughal Empire.In a brief interruption in Mughal rule between 1540 and 1556, Sher Shah Suri, established the short lived Sur Empire. Agra was the capital of the Mughal Empire from 1556 to 1648, under the Mughal Emperors Akbar, Jahangir and Shah Jahan, after which Shah Jahan shifted the capital to Delhi. The Mughal Empire saw the building of many monuments, especially Taj Mahal. The city was later taken by the Jats and then Marathas and later still fell to the British Raj.</p>   
+            </div>
+            <div class="container1">
+            <!-- hotels -->
+            <a  class="button" href="{% url 'hotels_agra' %}">HOTELS</a>
+            </div>
+        </body>

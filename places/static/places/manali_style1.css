@@ -1,0 +1,80 @@
+body
+{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background:url(Manali_jan.jpg);
+    background-size: cover ;
+}
+.container
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:600px;
+    padding:30px;
+    background:#fff;
+    box-sizing:border-box;
+    border-radius:10px;
+    box-shadow:0 15px rgba(0,0,0,.2);
+
+}
+.circle
+{
+    width:200px;
+    height:200px;
+    background:url(Manali_jan.jpg);
+    border-radius: 50%;
+    float:left;
+    shape-outside: circle();
+    margin:60px 30px 30px 0;
+}
+p
+{
+    margin:0;
+    padding:0;
+    text-align:justify;
+    line-height: 22px;
+
+}
+h1
+{
+    margin:0 0 20px;
+    padding:0;
+    font-size: 30px;
+
+}
+.container1
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.button
+{
+    position: relative;
+    top:50%;
+    width:200;
+    padding:40px;
+    font-size:25px;
+    color:#9b68ec;
+    font-family: poppins;
+    font-weight: 400;
+    border:5px  solid #9e1297;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.5s;
+    left:200%;
+    bottom:500%;
+}
+.button:hover
+{
+    box-shadow:0 5px 50px 0 #f06d6d inset , 0 5px 50px 0 #ff7e7e;
+                0 5px 50px 0 #c8362e inset , 0 5px 50px 0 #c8362e;
+
+}

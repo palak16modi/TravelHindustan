@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            TRAVEL HINDUSTAN
+        </title>
+        <!--for proper zooming in mobile phones-->
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <!-- for stylish icons--> 
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        {% load static %}
+
+        <link rel="stylesheet" type="text/css" href="{% static 'users/minor_project.css' %}">
+    </head>
+    <body id="myPage">
+        <!--for parallax effect-->
+        <section class="wrapper" id="parallax-1">
+            <div class="overlay">
+                <header class="d-flex-r clear justify-content-space-between">
+                    <!--logo-->
+                    <!--<div class="my-1" id="logo"><a href="minor_project.html"></a><img src="Glasses.jpg"></div>-->
+                    <!--navigation bar-->
+                    <nav class="f1_right font-xs text-uppercase" id="main_navbar">
+                        <ul class="clear">
+                            <li class="active"><a href="minor_project.html">HOME</a></li>
+                            <li><a href="#">Places</a>
+                            <ul>
+                                <li><a href="{% url 'agra' %}">AGRA</a></li>
+                                <li><a href="{% url 'jaipur' %}">JAIPUR</a></li>
+                                <li><a href="{% url 'delhi' %}">DELHI</a></li>
+                                <li><a href="{% url 'shimla' %}">SHIMLA</a></li>
+                                <li><a href="{% url 'mumbai' %}">MUMBAI</a></li>
+                                <li><a href="{% url 'gangtok' %}">GANGTOK</a></li>
+                                <li><a href="{% url 'manali' %}">MANALI</a></li>
+                                <li><a href="{% url 'kerela' %}">KERELA</a></li>
+                                <li><a href="{% url 'goa' %}">GOA</a></li>
+                                <li><a href="{% url 'kolkata' %}">KOLKATA</a></li>
+                            </ul></li>
+                            
+
+                            </li>
+                            <li><a href="{% url 'news' %}">NEWS</a></li>
+                            <li><a href="{% url 'blogs' %}">Blog</a></li>
+                            <li><a href="{% url 'signup' %}">Log-out</a></li>
+                            <li><a href="{% url 'post_detail' %}">Your Blog</a></li>
+                            <li><a href="{% url 'events' %}">UPCOMING EVENTS</a></li>
+
+                            </li>
+
+                        </ul>
+
+                    </nav> 
+
+                </header>
+                <div id="banner-text" class="d-flex-c text-left">
+                    <article>
+                        <p class="my-1 text-uppercase font-xs">Life is a journey make the most out of it.</p>
+                        <h1 class="heading text-left text-uppercase text-bold font-x3 my-1">TRAVEL HINDUSTAN</h1>
+                        <p class="my-3 font-xs">A man of ordinary talent will always be ordinary,
+                             <br>whether he travels or not;
+                             <br> but a man of superior talent will go to pieces if he remains forever in the same place.</p>
+                             
+                    </article>
+                </div>
+
+            </div>
+            
+        </section>
+<section class="wrapper text-dark bg-grey">
+    <div class="d-flex-c container">
+    <div class="text-center">
+        <h6 class="heading text-uppercase my-1 font-x2">ABOUT INDIA TOURISM</h6>
+        <p class="my-3">"Time flies its up to you to be a navigator"</p>
+    </div>
+    <div>
+        <div class="one_half" id="extra-text">
+            <ul class="mx-2">
+                <li class="one_half my-1">
+                    <article>
+                        <h6 class="heading font-x1"><a href="#">Traveltalesfromindia.in</a></h6>
+                        <p class="nospace text-justify">It began with just articles about travel in India, but as she has expanded her horizon since she gave up her academic career and decided to focus solely on writing, her blog &hellip;</p>
+                    </article>
+                </li>
+                <li class="one_half my-1">
+                    <article>
+                        <h6 class="heading font-x1"><a href="#">Desitraveler.com</a></h6>
+                        <p class="nospace text-justify">Prasad Np has been dedicated to writing about India from the perspective of both his family – in comfort and style – and as a sole voyager in a more backpacking, fly-by-the-seat-of-his-pants approach&hellip;</p>
+                    </article>
+                </li>
+                <li class="one_half ">
+                    <article>
+                        <h6 class="heading font-x1"><a href="#">Devilonwheels.com</a></h6>
+                        <p class="nospace text-justify">This well-designed and nicely-compiled blog by travelling guru Dheeraj Sharma is dedicated to the beauty of the high and mighty Himalayas of India. &hellip;</p>
+                    </article>
+                </li>
+                <li class="one_half">
+                    <article>
+                        <h6 class="heading font-x1"><a href="#">Isharethese.com</a></h6>
+                        <p class="nospace text-justify">Desi girl Indrani Ghose has been blogging for almost ten years. In that time she’s been capturing the heart of India with an array of photography&hellip;</p>
+                    </article>
+                </li>
+            </ul>
+        </div>
+        <div class="one_half my-1" id="main-text">
+            <h6 class="font-xs my-1">Lakshmisharath.com</h6>
+            <p class="test-justify">Already an established journalist, Lakshmi Sharath switched her media desk job for a continued get-up-and-go life. Sharath beautifully journals her backpacking travel tales as she ventures to the nooks and crannies of India, where she magically weaves the magic of heritage, culture and mythology into something tangible for armchair travelers</p>
+            <p class="my-1 test-justify">You won’t be surprised that this real and fresh approach has received her notoriety as a key India travel influencer, and is repeatedly quoted and featured in global and national publications, from National Geographic Traveller to the Deccan Herald.</p>
+            <footer><a class="button" href="{% url 'blogs' %}" >Read More &raquo;</a
+                ></footer>
+
+        </div>
+    </div>
+</div>
+</section>
+<!-- second parallax section-->
+<section class="wrapper" id="parallax-2">
+    <article class="d-flex-c container text-center">
+        <div class="my-2">
+            <h6 class="heading font-x2">HAVE A LOOK</h6>
+            <p>STAY RIDE EXPLORE</p>
+        </div>
+        
+    </article>
+</section>
+<!--popular destination part-->
+<section class="wrapper text-dark bg-grey" id="destinations">
+    <div class="container d-flex-c">
+        <div class="text-center">
+            <h6 class="heading my-1 font-x2">Popular destinations</h6>
+            <p class="my-1">Success is a journey , not a destination.The doing is often more important than the outcome.</p>
+        </div>
+        <ul class="d-flex-r nospace">
+            <li class="hover1">
+                <!-- {% static 'users/hawamahal.jpg' %} -->
+                <img src="{% static 'users/hawamahal.jpg' %}">
+                <div class="overlay">
+                    <h2>JAIPUR</h2>
+                   
+                </div>
+            </li>
+            <li class="hover1">
+            
+                <img src="{% static 'users/tajmahal.jpg' %}">
+                <div class="overlay">
+                    <h2>AGRA</h2>
+                  
+                </div>
+            </li>
+            <li class="hover1">
+                <img src="{% static 'users/indiagate.jpg' %}">
+                <div class="overlay">
+                    <h2>DELHI</h2>
+                    
+                </div>
+            </li>
+
+        </ul>
+
+        <ul class="d-flex-r nospace">
+            <li class="hover1">
+                <img src="{% static 'users/shimla.jpg' %}">
+                <div class="overlay">
+                    <h2>SHIMLA</h2>
+                    
+                </div>
+            </li>
+            <li class="hover1">
+                <img src="{% static 'users/mumbai.jpg' %}">
+                <div class="overlay">
+                    <h2>MUMBAI</h2>
+                  
+                </div>
+            </li>
+            <li class="hover1">
+                <img src="{% static 'users/gangtok.webp' %}">
+                <div class="overlay">
+                    <h2>GANGTOK</h2>
+                 
+                </div>
+            </li>
+
+        </ul>
+        <ul class="d-flex-r nospace">
+            <li class="hover1">
+                <img src="{% static 'users/Manali.jpg' %}">
+                <div class="overlay">
+                    <h2>MANALI</h2>
+                  
+                </div>
+            </li>
+            <li class="hover1">
+                <img src="{% static 'users/kerela.jpg' %}">
+                <div class="overlay">
+                    <h2>KERELA</h2>
+                   
+                </div>
+            </li>
+            <li class="hover1">
+                <img src="{% static 'users/goa.jpg' %}">
+                <div class="overlay">
+                    <h2>GOA</h2>
+                   
+                </div>
+            </li>
+        </ul>
+    </div>  
+
+</section>
+<!--footer-->
+<div class="wrapper bg-green">
+    <footer class="d-flex-r clear container text-white">
+        <div class="mx-2">
+            <h6 class="heading font-x1 my-1">Contact US</h6>
+            <ul class="nospace linkedlist contact">
+                <li><i class="fa fa-map-marker"></i>
+                <address>Jaypee University of Engineering and Technology &amp; Guna , 473001</address>
+            </li>
+            <li><i class="fa fa-phone"></i>6263144122</li>
+            <li><i class="fa fa-phone"></i>8516022995</li>
+            <li><i class="fa fa-envelope-o"></i>rachukabir123@gmail.com</li>
+            <li><i class="fa fa-envelope-o"></i>myselfvipulakash@gmail.com</li>
+            
+            </ul>
+        </div>
+        <div class="mx-2">
+            <h6 class="heading my-1 font-x1">About</h6>
+            <ul class="nospace linkedlist">
+                <li><a href="#">Company Profile</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="mx-2">
+            <h6 class="heading my-1 font-x1">Company</h6>
+            <ul class="nospace linkedlist">
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About Company</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+        <div class="mx-2">
+            <h6 class="heading my-1 font-x1">Join Us!</h6>
+            <p class="my-1">Fill the details.</p>
+            <form method="post" action="#">
+                <fieldset>
+                    <input type="text" class="my-1" placeholder="Name">
+                    <input type="email" class="my-1" placeholder="Email">
+                    <button class="btn">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </footer>
+    <div class="d-flex-r clear justify-content-space-between" id="copyright">
+        <p class="d-flex-r">Copyright &copy; 2020 - All Rights Reserved -<a href="#">Domain Name</a></p>
+        <a href="mypage" id="backtotop"><i class="fa fa-chevron-up"></i></a>
+        <p class="d-flex-r">Template by<a href="https://www.instagram.com/kabir__2k/?hl=en" target="_blank" title="kabir__2k">kabir__2k</a></p>
+    </div>
+
+
+    </body>
+</html>

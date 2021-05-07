@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CONNECTING PAGES
+        </title>
+        {% load static %}
+
+        <link rel="stylesheet" type="text/css" href="{% static 'places/delhi_style1.css' %}">
+        </head>
+        <body>
+            <div class="container">
+                <div class="circle"></div>
+                <h1>
+                    DELHI
+                </h1>
+                <p>Delhi, India’s capital territory, is a massive metropolitan area in the country’s north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people. Nearby is Chandni Chowk, a vibrant bazaar filled with food carts, sweets shops and spice stalls.Delhi has been continuously inhabited since the 6th century BCE.Through most of its history, Delhi has served as a capital of various kingdoms and empires, most notably the Pandavas, the Delhi Sultanate and the Mughal Empire.A union territory, the political administration of the NCT of Delhi today more closely resembles that of a state of India, with its own legislature, high court and an executive council of ministers headed by a Chief Minister. New Delhi is jointly administered by the federal government of India and the local government of Delhi, and serves as the capital of the nation as well as the NCT of Delhi. Delhi hosted the inaugural 1951 Asian Games, 1982 Asian Games, 1983 NAM Summit, 2010 Men's Hockey World Cup, 2010 Commonwealth Games, 2012 BRICS Summit and was one of the major host cities of the 2011 Cricket World Cup.</p>
+            </div>
+            <div class="container1">
+            <a class="button" href="{% url 'hotels_delhi' %}">HOTELS</a>
+            </div>
+        </body> 
