@@ -48,8 +48,9 @@ INSTALLED_APPS = [
     'post',
     'django_summernote',
     'rating',
-    'events'
+    'events',
 ]
+CRISPY_TEMPLATE_PACK = 'uni_form'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
